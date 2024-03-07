@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className=" flex h-24 items-center justify-center  ">
         <ul>
           {NavItems.map((item , index)=>(
-            <Link href="https://github.com/Shazil-we" className=' text-white mx-6 hover:text-emerald-300 hover:font-semibold font-medium'>{item}</Link>
+            <Link href="https://github.com/Shazil-we" className=' text-white mx-6 hover:text-emerald-300 hover:font-semibold font-medium' key={index}>{item}</Link>
           ))}
         </ul>
       </div>
